@@ -1,0 +1,58 @@
+Stock Price Prediction Model - KNN Classification
+
+Model Overview:
+- This model uses the K-Nearest Neighbors (KNN) algorithm to classify stock prices.
+- The classification is based on whether the stock's price today is higher or lower than yesterday's closing price.
+- The model predicts whether to **Buy** (📈) or **Sell** (📉) based on historical stock data.
+
+Key Points:
+- **Input Features**:
+  - 'Open - Close': The difference between the opening and closing price.
+  - 'High - Low': The difference between the high and low price.
+- **Target**:
+  - Class label: `+1` for Buy (if the closing price is higher than the previous day's closing) and `-1` for Sell (if the closing price is lower than the previous day's closing).
+- **Model Type**: K-Nearest Neighbors (KNN) Classifier
+- **Optimization**: Hyperparameter tuning was performed using GridSearchCV to determine the optimal value of 'n_neighbors' (number of neighbors in KNN).
+
+Model Accuracy:
+- The model is evaluated on two sets:
+  - **Train Accuracy**: The accuracy of the model on the training dataset.
+  - **Test Accuracy**: The accuracy of the model on the test dataset.
+
+Instructions for Use:
+1. Input the **stock ticker** of a publicly traded company.
+2. The model will fetch the **historical stock data** for the given ticker.
+3. It will **predict** whether to **Buy** or **Sell** based on the stock’s price trend.
+
+Dependencies:
+- yfinance (to fetch stock data)
+- scikit-learn (for the KNN model and GridSearchCV)
+- pandas (for data manipulation)
+- numpy (for numerical operations)
+- streamlit (for the web app)
+
+Instructions for Running the Model:
+1. Clone the repository.
+2. Install the required dependencies (`pip install -r requirements.txt`).
+3. Run the Streamlit app (`streamlit run stock_prediction_app.py`).
+
+Model Created by:
+- **Hardik Arora** ❤️
+
+Thank you for using this model!
+```
+
+### Explanation of Sections in `info.txt`:
+- **Model Overview**: A brief explanation of the purpose and working of the model.
+- **Key Points**: Describes the input features and target used in the model.
+- **Model Type**: Specifies the algorithm used and the optimization process.
+- **Model Accuracy**: Highlights how the model's performance is evaluated.
+- **Instructions for Use**: Guides the user on how to input the stock ticker and what to expect.
+- **Dependencies**: Lists the libraries and frameworks required to run the model.
+- **Instructions for Running the Model**: Gives a simple guide on how to get the app running on a local machine.
+- **Model Created by**: Credits the author and adds a personal touch with a heart emoji.
+
+### Steps to Create this `info.txt`:
+1. Create a new file named `info.txt` in the root directory of your project.
+2. Paste the above content into the file.
+3. Save and commit the file to your repository.
